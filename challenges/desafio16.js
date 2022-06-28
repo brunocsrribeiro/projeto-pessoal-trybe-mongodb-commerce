@@ -9,8 +9,7 @@ db.produtos.update({
         $type: "timestamp",
       },
     },
-  },
-);
+});
 
 db.produtos.find({
   ultimaModificacao: { $exists: true },
